@@ -11,6 +11,7 @@ class Post extends Model
 
     //protected $fillable = ['title', 'excerpt', 'body']; //fillable hanya yang ditulis yang boleh diisi
     protected $guarded = ['id']; //guarded yg diisi adalah selain yang ditulis
+    protected $with = ['category','author'];
 
     public function category()
     {
