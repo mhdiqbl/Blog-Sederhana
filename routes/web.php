@@ -24,16 +24,18 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     return view('home',[
-        "title" => "Home"
+        "title" => "Home",
+        'active' => 'home',
     ]);
 });
 
 Route::get('/about', function () {
     return view('about', [
+        "title" => "About",
+        'active' => 'about',
         "name" => "Iqbal",
         "email" => "iqbal@gmail.com",
         "image" => "ibal.jpg",
-        "title" => "About"
     ]);
 });
 
